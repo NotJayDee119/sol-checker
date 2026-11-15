@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+ * SOL design tokens (spec §10): ink navy text, red-pen red for primary actions and
+ * scores, blue for links/progress/selection, on a cool grey-blue background.
+ * Values are HSL channels so Tailwind opacity modifiers (bg-primary/10) work.
+ */
+@layer base {
+  :root {
+    --background: 216 26% 96%; /* #F3F5F8 */
+    --foreground: 217 35% 16%; /* #1B2638 ink navy */
+    --card: 0 0% 100%;
+    --card-foreground: 217 35% 16%;
+    --primary: 2 65% 48%; /* #C8312B red pen */
+    --primary-foreground: 0 0% 100%;
+    --secondary: 6 71% 95%; /* #FBE9E7 red tint */
+    --secondary-foreground: 2 65% 38%;
+    --info: 215 59% 41%; /* #2B5FA8 blue */
+    --info-foreground: 0 0% 100%;
+    --accent: 215 61% 94%; /* #E6EEF9 blue tint */
+    --accent-foreground: 215 59% 36%;
+    --muted: 216 25% 93%;
+    --muted-foreground: 216 16% 43%; /* #5D6B80 */
+    --destructive: 2 65% 42%;
+    --destructive-foreground: 0 0% 100%;
+    --success: 150 59% 30%; /* #1F7A4D */
+    --success-foreground: 0 0% 100%;
+    --warning: 38 100% 33%; /* #A66A00 */
+    --warning-foreground: 0 0% 100%;
+    --border: 215 33% 89%; /* #D9E1EC */
+    --input: 215 25% 82%;
+    --ring: 215 59% 41%;
+  }
+}
